@@ -1,9 +1,12 @@
 {
+  "$schema": "./expo-schema.json",
   "expo": {
     "name": "my-expo-app",
     "slug": "my-expo-app",
     "version": "1.0.0",
+    "backgroundColor": "#24180f",
 
+    
     "web": {
       "favicon": "./assets/favicon.png"
     },
@@ -16,7 +19,6 @@
 
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-
     "userInterfaceStyle": "light",
 
     "splash": {
@@ -27,6 +29,7 @@
     "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
+      
     },
     "android": {
       "adaptiveIcon": {
