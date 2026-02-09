@@ -2,7 +2,7 @@ import { View, Text, Pressable, Image, Platform } from 'react-native'
 import React from 'react'
 import {  Meal ,RootStackNavigationProp } from "types/navigation";
 import { useNavigation } from '@react-navigation/native';
-import MealDetails from './MealDetails';
+import MealDetails from '../MealDetails';
 
 
 

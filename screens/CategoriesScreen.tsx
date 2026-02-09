@@ -3,13 +3,14 @@ import { CATEGORIES } from "data/dummy-data";
 import { View, Text, FlatList, ListRenderItemInfo } from 'react-native'
 import React from 'react'
 import CategoryGridTile from "components/CategoryGridTile";
-import { Category, MealsCategoriesScreenProps } from "types/navigation";
+import { Category, MealsCategoriesScreenProps,DrawerCategoriesScreenProps,DrawerAndStackProps } from "types/navigation";
+import { DrawerScreenProps } from '@react-navigation/drawer';
 
 
 
 
 
-const CategoriesScreen = ({ navigation }: MealsCategoriesScreenProps) => {
+const CategoriesScreen = ({ navigation }: DrawerAndStackProps) => {
 const renderCategoryItem = (itemData: ListRenderItemInfo<Category>) => {
     
   const pressHandler = ()  => {

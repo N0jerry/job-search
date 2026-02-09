@@ -1,15 +1,16 @@
 import { View, Text, FlatList, ListRenderItemInfo } from 'react-native'
 import React, { useEffect, useLayoutEffect } from 'react'
 
-import { MealsOverviewScreenProps } from "types/navigation";
+// import type { MealsOverviewScreenProps } from "types/navigation";
 
 import { MEALS, CATEGORIES } from 'data/dummy-data';
 
-import { Category, Meal } from "types/navigation";
+import { Category, Meal, MealsCategoriesScreenProps } from "types/navigation";
 
-import MealItem from 'components/MealItem';
+import MealItem from 'components/MealsList/MealItem';
+import MealsList from 'components/MealsList/MealsList';
 
-const MealsOverviewScreen = ({ route, navigation }: MealsOverviewScreenProps) => {
+const MealsOverviewScreen = ({ route, navigation }: MealsCategoriesScreenProps) => {
     const catId = route.params.categoryId;
     
     const displayedMeals = MEALS.filter((mealItem) => {
@@ -43,13 +44,7 @@ const MealsOverviewScreen = ({ route, navigation }: MealsOverviewScreenProps) =>
     }
 
   return (
-    <View className='flex-1 p-4'>
-      <FlatList 
-        data={displayedMeals}
-        keyExtractor={(item) => item.id}
-        renderItem={renderMealItem}
-      />
-    </View>
+    <MealsList items={displayedMeals}/>
   )
 }
 
