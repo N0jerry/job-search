@@ -6,21 +6,21 @@
 - Scan-to-Order 为 Web 端实战项目
 
 <p align="center">
-  <img src="images/scan-to-order-ezgif.gif" width="640" height="360">
+  <img src="images/scan-to-order-ezgif.gif" width="300" height="400">
 </p>
 
 <p align="center">
-  <img src="images/a2.png" width="130" height="240" style="margin:0 10px;">
-  <img src="images/a1.png" width="130" height="240" style="margin:0 10px;">
+  <img src="images/a2.png" width="130" height="240" style="margin:18px 18px;">
+  <img src="images/a1.png" width="130" height="240" style="margin:18px 18px;">
 </p>
 
 ### 项目三
 - Bill、RN-Map、restaurant 目录均为 React Native 实战项目
 
 <p align="center">
-  <img src="images/bill.png" width="130" height="240" style="margin:0 18px;">
-  <img src="images/map1.png" width="130" height="240" style="margin:0 18px;">
-  <img src="images/restaurant.png" width="130" height="240" style="margin:0 18px;">
+  <img src="images/bill.png" width="130" height="240" style="margin:18px 18px;">
+  <img src="images/map1.png" width="130" height="240" style="margin:18px 18px;">
+  <img src="images/restaurant.png" width="130" height="240" style="margin:18px 18px;">
 </p>
 
 ---
