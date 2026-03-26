@@ -1,0 +1,167 @@
+@import 'tailwindcss';
+
+/* @media print {
+  iframe {
+    display: block !important;
+  }
+} */
+
+/* input {
+  @apply outline-none focus:ring;
+
+}
+input {
+  @apply outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2;
+} */
+#root {
+  height: 100dvh;
+  /* height: 100%; */
+  /* min-height: 100vh; */
+  /* background-color: var(--color-bg); 继承全局背景色变量 */
+  /* padding: 0; 按需调整内边距 */
+} 
+.viewport-height {
+  height: 100vh; /* 固定为视口高度 */
+  overflow: auto; /* 内容超出时内部滚动 */
+}
+html.dark {/*直接选中html元素*/
+  height: 100dvh;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  --color-text: rgba(255, 255, 255, 0.87); /* 文字颜色（浅灰）
+  /* color-scheme: light dark; */
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  /* height: 100%; */
+}
+
+
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  height: 100dvh;
+  /* background-color: var(--color-body-bg);  */
+  margin: 0;
+  /* display: flex; */
+  /* flex-direction: column;  */
+  /*color: var(--color-text); /* 文字色继承给子元素 */
+  /* place-items: center; */
+  /* min-width: 320px; */
+  /* min-height: 100vh; */
+  color: inherit; /* 关键：继承 :root 的 color 属性 */
+  background-color: inherit; /* 可选：继承背景色 */
+ 
+  
+}
+
+
+/* h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+} */
+
+button {
+  border-radius: 8px; 
+  border: 1px solid transparent;
+  padding: 0.3em 0.5em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  @apply bg-slate-300;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+/* 深色模式 */
+.dark {
+  button {
+    background-color: #333333;
+
+  }
+  button:hover {
+    border-color: #646cff;
+  }
+  button:focus,
+  button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
+}
+input {
+  /* 底纹颜色 */
+  background-color: #f5f5f5;
+  /* 去掉默认边框或设置自定义边框 */
+  border: 1px solid #ddd;
+  /* 圆角优化 */
+  border-radius: 4px;
+  /* 内边距，让内容与边框有距离 */
+  padding: 8px 12px;
+  /* 字体和大小 */
+  font-size: 14px;
+  width: 300px;
+}
+
+/* 聚焦时变化（可选） */
+input:focus {
+  /* 聚焦时加深底纹或改变边框 */
+  background-color: #f0f0f0;
+  border-color: #999;
+  outline: none; /* 去掉默认聚焦轮廓 */
+}
+
+
+  a:hover {
+    color: #747bff;
+  }
+  /* button {
+    background-color: #f9f9f9;
+  } */
+/* .scrollbar-hide-y { */
+  /* 1. 控制Y轴：保留垂直滚动功能，溢出时可滚动 */
+  /* overflow-y: auto;  */
+  /* 2. 控制X轴：根据需求选择（若不需要水平滚动，设为hidden避免多余滚动条） */
+  /* overflow-x: hidden; 推荐：禁止水平滚动，避免X轴意外出现滚动条 */
+  /* 3. 隐藏Y轴滚动条的核心规则（兼容各浏览器） */
+  /* scrollbar-width: none; Firefox：隐藏滚动条 */
+  /* -ms-overflow-style: none; IE/Edge：隐藏滚动条 */
+/* } */
+/* .scrollbar-hidden {
+  scrollbar-width: none !important; /* Firefox */
+  /*-ms-overflow-style: none !important; /* Internet Explorer 10+ */
+/*} */
+/*普通模式*/
+  
+  /* 应用变量到元素 */
+/* 定义变量（通常在 :root 全局作用域） */
+:root {
+  --text-color: #0d0909;    /* 浅色模式文本色 */
+  --title-color: #333;   /* 浅色模式标题色 */
+  --card-color: #666;    /* 浅色模式卡片文本色 */
+}
+
+/* 深色模式时，只需要修改变量值 */
+html.dark {
+  --text-color: #fff;    /* 深色模式文本色 */
+  --title-color: #ddd;   /* 深色模式标题色 */
+  --card-color: #aaa;    /* 深色模式卡片文本色 */
+}
+  a:hover {
+    color:#747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+
