@@ -3,8 +3,7 @@
 - 本项目为求职用途，用于技术能力展示
     - 项目二: 
         - Scan-to-Order为Web端实战项目
-        <br>
-        <br>
+        
         <video src="./images/scan-to-order.mp4" controls width="640" height="360">
             您的浏览器不支持视频播放
         </video>
@@ -13,8 +12,7 @@
         <img src="./images/a2.png" width="130px" height="240px">
         <img src="./images/a1.png" width="130px" height="240px">
         </div>
-        <br>
-        <br>
+        
     - 项目三: 
         - Bill、RN-Map、restaurant 目录均为 React Native 实战项目
 
