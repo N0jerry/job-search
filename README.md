@@ -4,7 +4,7 @@
     - 项目二: 
         - Scan-to-Order为Web端实战项目
         
-        <video src="./images/scan-to-order.mp4" controls width="640" height="360">
+        <video src="./images/scan-to-order-ezgif.gif" controls width="640" height="360">
             您的浏览器不支持视频播放
         </video>
 
@@ -18,7 +18,7 @@
 
         <div style="display: flex; justify-content: center; gap: 1.5rem; margin: 30px;">
         <img src="./images/bill.png" width="130px" height="240px">
-        <img src="./images/map.png" width="130px" height="240px">
+        <img src="./images/map1.png" width="130px" height="240px">
         <img src="./images/restaurant.png" width="130px" height="240px">
         </div>
 
